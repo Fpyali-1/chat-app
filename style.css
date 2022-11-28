@@ -45,6 +45,12 @@ body {
 
 #main {
   background-color: white;
+  border-radius: 35px;
+  width: 92.5%;
+  height: 92% !important;
+  margin-left: 120px;
+  position: absolute;
+  margin-top: -100px;
 }
 
 #form {
@@ -87,14 +93,3 @@ body {
   background-color: grey;
   color: white;
 }
-
-#messages {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-#messages > li {
-  padding: 0.5rem 1rem;
-}
-#messages > li:nth-child(odd) {
-  background: #efefef;
