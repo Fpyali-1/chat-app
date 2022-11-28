@@ -47,10 +47,11 @@ body {
   background-color: white;
   border-radius: 35px;
   width: 90%;
-  height: 88% !important;
+  height: 91% !important;
   margin-left: 120px;
   position: absolute;
   margin-top: -100px;
+  position: absolute;
 
   padding: 25px;
 
@@ -65,10 +66,10 @@ body {
 
 #chats {
   width: 280px;
-  height: 95%;
+  height: 91%;
   border-radius: 30px;
-  box-shadow: 7px 5px 80px #c1cfff;
-  position: absolute;
+  box-shadow: 7px 5px 15px #c1cfff;
+  position: fixed;
 }
 
 #chatstitle {
@@ -76,23 +77,33 @@ body {
   color: #242c39;
   font-family: Arial Rounded MT Bold;
   font-weight: 200;
+  position: fixed;
 }
 
 #form {
   display: flex;
   height: 50px;
   position: absolute;
-  bottom: 80px;
+  bottom: 50px;
   width: 72%;
   margin-left: 300px;
   position: fixed;
-  box-shadow: 10px 7px 20px #c1cfff;
+  box-shadow: 13px 10px 15px #c1cfff;
+  background-color: white;
+  border-radius: 20px;
 }
 
 .message {
   margin-left: 320px;
+  font-family: Arial Rounded MT Bold;
+  padding-top:20px;
+  background-color: #f26baa;
+  color: white;
+  width: 300px;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 10px;
 }
-
 
 #button:hover {
   background-color: blue; /* Green */
@@ -109,15 +120,44 @@ body {
   outline: none;
 }
 #button {
-  background: #333;
   border: none;
   padding: 0 1rem;
   margin: 0.25rem;
-  border-radius: 3px;
+  border-radius: 20px;
   outline: none;
-  color: #fff;
+  width: 35px;
+
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 #button:hover {
-  background-color: grey;
-  color: white;
+  color: grey;
+  background:none;
+}
+
+#search {
+  border: none;
+  margin-top: 90px;
+  padding: 5px;
+  font-family: Arial Rounded MT Bold
+  padding-left: 0px;
+  width: 150px;
+  margin-left: 20px;
+  color: #909090
+}
+
+#searchlogo {
+  height: 20px;
+  width: 20px;
+  margin: 5px;
+  margin-top: 92px;
+  margin-left: 18px;
+  position: absolute;
 }
