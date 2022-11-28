@@ -42,7 +42,9 @@ body {
 
   cursor: pointer
 }
-
+#sidebarimage:hover {
+    filter: opacity(0.5) drop-shadow(0 0 0 blue);
+}
 #messages-div {
   background-color: white;
   border-radius: 35px;
