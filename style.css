@@ -46,12 +46,13 @@ body {
 #messages-div {
   background-color: white;
   border-radius: 35px;
-  width: 89.5%;
-  height: 91% !important;
+  width: 86.5%;
+  height: 85% !important;
   margin-left: 120px;
   position: absolute;
   margin-top: -100px;
   position: absolute;
+  border: 30px solid white;
 
   padding: 25px;
 
@@ -66,14 +67,13 @@ body {
 
 #chats {
   width: 280px;
-  height: 91%;
+  height: 88%;
   border-radius: 30px;
   box-shadow: 7px 5px 15px #c1cfff;
   position: fixed;
 }
 
 #chatstitle {
-  padding-left: 15px;
   color: #242c39;
   font-family: Arial Rounded MT Bold;
   font-weight: 200;
@@ -151,7 +151,7 @@ body {
   font-family: Arial Rounded MT Bold
   padding-left: 0px;
   width: 150px;
-  margin-left: 20px;
+  margin-left: 15px;
   color: #909090
 }
 
@@ -160,6 +160,6 @@ body {
   width: 17px;
   margin: 5px;
   margin-top: 92px;
-  margin-left: 18px;
+  margin-left: 15px;
   position: absolute;
 }
