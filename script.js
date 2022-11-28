@@ -6,8 +6,12 @@ let x = 0;
 
 ws.addEventListener("open", () => {
   x = 1;
+  var objDiv = document.getElementById("messages-div");
+  objDiv.scrollTop = objDiv.scrollHeight;
 });
 ws.addEventListener("message", (e) => {
+  var objDiv = document.getElementById("messages-div");
+  objDiv.scrollTop = objDiv.scrollHeight;
   const boxes = document.querySelectorAll(".message");
 
   boxes.forEach((box) => {
