@@ -121,11 +121,15 @@ body {
 }
 #button {
   border: none;
-  padding: 0 1rem;
+  padding-top: 10px;
+  padding-right: 10px;
   margin: 0.25rem;
   border-radius: 20px;
   outline: none;
   width: 35px;
+
+  width: 25px;
+  height: 25px;
 
   user-drag: none;
   user-select: none;
@@ -138,10 +142,8 @@ body {
   user-select: none; /* Standard syntax */
 }
 #button:hover {
-  color: grey;
-  background:none;
+  background: none;
 }
-
 #search {
   border: none;
   margin-top: 90px;
