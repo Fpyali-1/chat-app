@@ -88,7 +88,7 @@ body {
   width: 72%;
   margin-left: 300px;
   position: fixed;
-  box-shadow: 13px 10px 15px #c1cfff;
+  box-shadow: 3px 3px 3px #c1cfff;
   background-color: white;
   border-radius: 20px;
 }
@@ -156,8 +156,8 @@ body {
 }
 
 #searchlogo {
-  height: 20px;
-  width: 20px;
+  height: 17px;
+  width: 17px;
   margin: 5px;
   margin-top: 92px;
   margin-left: 18px;
