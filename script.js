@@ -25,7 +25,7 @@ ws.addEventListener("message", (e) => {
   </p>
   </div>
   `;
-    document.body.insertAdjacentHTML("beforeend", y);
+    document.getElementById("messages-div2").insertAdjacentHTML("beforeend", y);
   });
 });
 function send() {

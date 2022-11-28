@@ -1,6 +1,50 @@
 body {
   margin: 0;
   padding-bottom: 3rem;
+  background-color: #2352b3;
+}
+
+#sidebar {
+  margin:auto;
+  position:absolute;
+  top:0;bottom:0; /* Aligns Vertically - Remove for Horizontal Only */
+  width: 100px;
+  max-height:400px;
+  overflow:auto;
+  margin-left: 5px;
+}
+
+#logo {
+  height: 40px;
+  width: 40px;
+  margin: 35px;
+
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+#sidebarimage {
+  height: 22px;
+  width: 22px;
+  margin: 15px;
+  margin-left: 38px;
+
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+
+  cursor: pointer
+}
+
+#main {
+  background-color: white;
 }
 
 #form {
@@ -54,12 +98,3 @@ body {
 }
 #messages > li:nth-child(odd) {
   background: #efefef;
-}
-.message {
-  font-family: segoe ui;
-  padding: 6px;
-  background-color: #f44336; /* Red */
-  color: white;
-  margin-bottom: 10px;
-  width: fit-content;
-}
