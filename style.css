@@ -103,11 +103,6 @@ body {
   padding: 10px;
   margin-top: 10px;
 }
-
-#button:hover {
-  background-color: blue; /* Green */
-  color: green;
-}
 #input1 {
   border: none;
   padding: 0 1rem;
@@ -140,7 +135,7 @@ body {
   user-select: none; /* Standard syntax */
 }
 #button:hover {
-  background-color: grey;
+  filter: opacity(0.5) drop-shadow(0 0 0 blue);
 }
 #search {
   border: none;
