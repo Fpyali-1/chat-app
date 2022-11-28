@@ -46,13 +46,13 @@ body {
 #messages-div {
   background-color: white;
   border-radius: 35px;
-  width: 86.5%;
-  height: 85% !important;
+  width: 84.7%;
+  height: 81% !important;
   margin-left: 120px;
   position: absolute;
   margin-top: -100px;
   position: absolute;
-  border: 30px solid white;
+  border: 50px solid white;
 
   padding: 25px;
 
@@ -67,9 +67,8 @@ body {
 
 #chats {
   width: 280px;
-  height: 88%;
+  height: 86.5%;
   border-radius: 30px;
-  box-shadow: 7px 5px 15px #c1cfff;
   position: fixed;
 }
 
@@ -84,11 +83,10 @@ body {
   display: flex;
   height: 50px;
   position: absolute;
-  bottom: 50px;
-  width: 72%;
+  bottom: 37px;
+  width: 71%;
   margin-left: 300px;
   position: fixed;
-  box-shadow: 3px 3px 3px #c1cfff;
   background-color: white;
   border-radius: 20px;
 }
@@ -123,13 +121,12 @@ body {
   border: none;
   padding-top: 10px;
   padding-right: 10px;
-  margin: 0.25rem;
+  margin: 7px;
   border-radius: 20px;
-  outline: none;
   width: 35px;
 
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
 
   user-drag: none;
   user-select: none;
@@ -142,17 +139,18 @@ body {
   user-select: none; /* Standard syntax */
 }
 #button:hover {
-  background: none;
+  background-color: grey;
 }
 #search {
   border: none;
-  margin-top: 90px;
-  padding: 5px;
+  margin-top: 85px;
+  padding: 8px;
   font-family: Arial Rounded MT Bold
   padding-left: 0px;
   width: 150px;
   margin-left: 15px;
-  color: #909090
+  color: #909090;
+  outline: none;
 }
 
 #searchlogo {
