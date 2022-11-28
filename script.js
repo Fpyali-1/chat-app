@@ -1,4 +1,4 @@
-const ws = new WebSocket("wss://ChillyPlaintiveFact.yaliwainstain.repl.co");
+const ws = new WebSocket("wss://chat-app.yaliwainstain.repl.co");
 
 const name1 = prompt("enter your name");
 
