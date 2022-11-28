@@ -43,15 +43,24 @@ body {
   cursor: pointer
 }
 
-#messages-div2 {
+#messages-div {
   background-color: white;
   border-radius: 35px;
-  width: 92.5%;
-  height: 92% !important;
+  width: 90%;
+  height: 88% !important;
   margin-left: 120px;
   position: absolute;
   margin-top: -100px;
-  overflow: none;
+
+  padding: 25px;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+          line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow-y: scroll;
 }
 
 #form {

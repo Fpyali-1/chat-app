@@ -13,11 +13,9 @@ ws.addEventListener("message", (e) => {
   boxes.forEach((box) => {
     box.remove();
   });
-  console.log(e.data);
   var x = eval(e.data);
-  document.getElementById("messages").innerHTML = "";
+  document.getElementById("messages-div").innerHTML = "";
   x.forEach((element) => {
-    console.log(element);
     var y = `
   <div class="message">
   <p>
@@ -25,13 +23,19 @@ ws.addEventListener("message", (e) => {
   </p>
   </div>
   `;
-    document.getElementById("messages-div2").insertAdjacentHTML("beforeend", y);
+    document.getElementById("messages-div").insertAdjacentHTML("beforeend", y);
   });
 });
 function send() {
-  ws.send(`"${name1}: ${document.getElementById("input1").value}"`);
+  var y = document.getElementById("input1").value;
+  if (y.length < 1) {
+    return;
+  }
+
   document.getElementById("input1").value = "";
-  //ws.send()
+  y = y.replaceAll('"', "''");
+  var x = `"${name1}: ${y}"`;
+  ws.send(x);
 }
 addEventListener("keypress", (event) => {
   if (event.key == "Enter") {
@@ -39,10 +43,8 @@ addEventListener("keypress", (event) => {
   }
 });
 function check(data) {
-  if ((data[0] == "*") & (data[data.length] == "*")) {
-    var x = data.replaceAll("*", "");
-    x = "<h1>" + x + "</h1>";
-    return x;
+  if (data.split(";").length - 1 > 1) {
+    return "<h1>" + data.replaceAll(";", "") + "</h1>";
   } else {
     return data;
   }
