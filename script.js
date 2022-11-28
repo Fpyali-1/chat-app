@@ -18,7 +18,6 @@ ws.addEventListener("message", (e) => {
     box.remove();
   });
   var x = eval(e.data);
-  document.getElementById("messages-div").innerHTML = "";
   x.forEach((element) => {
     var y = `
   <div class="message">
