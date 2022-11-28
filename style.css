@@ -31,7 +31,10 @@ body {
   height: 22px;
   width: 22px;
   margin: 15px;
-  margin-left: 38px;
+  margin-left: 35px;
+  border-radius: 5px;
+
+  padding: 4px;
 
   user-drag: none;
   user-select: none;
