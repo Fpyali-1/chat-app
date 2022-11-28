@@ -43,16 +43,6 @@ body {
   cursor: pointer
 }
 
-#messages {
-  background-color: white;
-  border-radius: 35px;
-  width: 92.5%;
-  height: 92% !important;
-  margin-left: 120px;
-  position: absolute;
-  margin-top: -100px;
-}
-
 #messages-div2 {
   background-color: white;
   border-radius: 35px;
@@ -61,6 +51,7 @@ body {
   margin-left: 120px;
   position: absolute;
   margin-top: -100px;
+  overflow: none;
 }
 
 #form {
