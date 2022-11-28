@@ -21,7 +21,7 @@ ws.addEventListener("message", (e) => {
     var y = `
   <div class="message">
   <p>
-  ${element}
+  ${check(element)}
   </p>
   </div>
   `;
@@ -38,3 +38,12 @@ addEventListener("keypress", (event) => {
     send();
   }
 });
+function check(data) {
+  if ((data[0] == "*") & (data[data.length] == "*")) {
+    var x = data.replaceAll("*", "");
+    x = "<h1>" + x + "</h1>";
+    return x;
+  } else {
+    return data;
+  }
+}
