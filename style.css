@@ -46,7 +46,7 @@ body {
   cursor: pointer
 }
 #sidebarimage:hover {
-    filter: opacity(0.5) drop-shadow(0 0 0 blue);
+    filter: opacity(0.1) drop-shadow(1 1 1 blue);
 }
 #messages-div {
   background-color: white;
