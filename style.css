@@ -84,13 +84,13 @@ body {
 
 #form {
   background: #2c2e2e;
-  padding: 10px;
+  padding: 13px;
   position: fixed;
   bottom: 0;
   left: 427px;
   right: 0;
   display: flex;
-  height: 80px;
+  height: 85px;
   box-sizing: border-box;
 }
 
@@ -122,11 +122,12 @@ body {
   padding: 0 1rem;
   border-radius: 2rem;
   margin: 0.25rem;
-  background-color: #37383c;
+  background-color: #3b3d40;
   color: white;
-  border-radius: 10px;
-  width: 98%;
+  border-radius: 14px;
+  width: 100%;
   position:relative;
+  margin-left: 20px;
 }
 #input1::placeholder {
   color: grey;
@@ -137,9 +138,9 @@ body {
 #button {
   border: none;
   padding-top: 8px;
-  padding-right: 10px;
   margin: 10px;
   border-radius: 20px;
+  margin-right: 20px;
 
   width: 25px;
   height: 25px;
