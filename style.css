@@ -75,7 +75,7 @@ body {
 
 #chatstitle {
   color: white;
-  font-family: Arial Rounded MT Bold;
+  font-family: Arial Rounded MT Bold, Arial Rounded MT;
   font-weight: 200;
   position: fixed;
   margin: 33px;
@@ -96,7 +96,7 @@ body {
 
 .message {
   margin-left: 350px;
-  font-family: Arial Rounded MT Bold;
+  font-family: Arial Rounded MT Bold, Arial Rounded MT;
   background-color: #f26baa;
   color: white;
   width: 350px;
