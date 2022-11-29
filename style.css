@@ -83,18 +83,15 @@ body {
 }
 
 #form {
-  display: flex;
-  height: 60px;
-  position: absolute;
-  bottom: 0px;
-  padding-bottom: 15px;
-  padding-top: 10px;
-  width: 77%;
+  background: #2c2e2e;
+  padding: 10px;
   position: fixed;
-  left: 426px;
-  padding-left: 10px;
-  background-color: #2c2e2e;
-  border: 1px solid #343434;
+  bottom: 0;
+  left: 427px;
+  right: 0;
+  display: flex;
+  height: 80px;
+  box-sizing: border-box;
 }
 
 .message {
@@ -123,12 +120,13 @@ body {
 #input1 {
   border: none;
   padding: 0 1rem;
-  flex-grow: 1;
   border-radius: 2rem;
   margin: 0.25rem;
   background-color: #37383c;
   color: white;
   border-radius: 10px;
+  width: 98%;
+  position:relative;
 }
 #input1::placeholder {
   color: grey;
