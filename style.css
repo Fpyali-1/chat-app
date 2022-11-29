@@ -71,7 +71,7 @@ body {
   height: 99.8%;
   position: fixed;
   background-color: #2c2e2e;
-  border: 1px solid #343434;
+  border: 1px solid #3e3e3e;
 }
 
 #chatstitle {
@@ -87,11 +87,12 @@ body {
   padding: 13px;
   position: fixed;
   bottom: 0;
-  left: 427px;
+  left: 426px;
   right: 0;
   display: flex;
   height: 85px;
   box-sizing: border-box;
+  border: 1px solid #3e3e3e;
 }
 
 .message {
@@ -213,10 +214,10 @@ body {
   background-color: #2c2e2e;
   position:fixed;
   width: 100%;
-  left: 425px;
+  left: 426px;
   display: flex;
   flex-direction: row;
-  border: 1px solid #343434;
+  border: 1px solid #3e3e3e;
 
 }
 
