@@ -130,7 +130,7 @@ body {
   position:relative;
 }
 #input1::placeholder {
-  color: grey;
+  color: #ffffff;
 }
 #input1:focus {
   outline: none;
