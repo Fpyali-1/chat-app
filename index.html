@@ -24,7 +24,7 @@
 
         <div> <img src="assets/sidebar-icons/doc.png" id="sidebarimage"> </div>
         <div> <img src="assets/sidebar-icons/calendar.png" id="sidebarimage"> </div>
-        <div> <img src="assets/sidebar-icons/chat.png" id="sidebarimage" style="background-color: #1c4394;"> </div>
+        <div> <img src="assets/sidebar-icons/chat.png" id="sidebarimage""> </div>
         <div> <img src="assets/sidebar-icons/notifications.png" id="sidebarimage"> </div>
         <div> <img src="assets/sidebar-icons/people.png" id="sidebarimage"> </div>
         <div> <img src="assets/sidebar-icons/settings.png" id="sidebarimage"> </div>
@@ -38,14 +38,25 @@
 
         <div id="chats">
 
-          <h1 id="chatstitle">Chat</h1>
+          <h1 id="chatstitle">Messages</h1>
 
           <div>
-            <input type="text" id="search" placeholder="Search Name">
             <img src="assets/search.png" id="searchlogo">
+            <input type="text" id="search" placeholder="Search...">
           </div>
 
-        </div>
+          <div>
+
+            <div id="development-group">
+
+              <img src="assets/pfp/developers.jpg" id="development-group-pfp">
+              <div id="development-group-name">Developers</div>
+
+            </div>
+
+          </div>
+
+         </div>
 
         <div id="form" onsubmit="send()">
           <input id="input1" autocomplete="off" placeholder="Type a message here..."/>
