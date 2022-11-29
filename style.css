@@ -157,11 +157,11 @@ body {
   transition: ease .2s;
 }
 #button:hover {
-	transform: scale(0.7);
+	transform: scale(0.95);
   transition: ease .2s;
 }
 #button:active {
-	transform: scale(1.2);
+	transform: scale(1.05);
   transition: ease .2s;
 
 }
