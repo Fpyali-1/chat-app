@@ -104,9 +104,9 @@ body {
   border-radius: 20px;
   margin-top: 110px;
   margin-bottom: -60px;
-  padding: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   max-width: 400px;
 
   user-drag: none;
