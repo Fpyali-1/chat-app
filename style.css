@@ -105,6 +105,7 @@ body {
   margin-top: 110px;
   margin-bottom: -60px;
   padding: 20px;
+  padding-bottom: 35px;
 
   user-drag: none;
   user-select: none;
@@ -130,7 +131,7 @@ body {
   position:relative;
 }
 #input1::placeholder {
-  color: #ffffff;
+  color: grey;
 }
 #input1:focus {
   outline: none;
@@ -172,7 +173,7 @@ body {
 #search {
   border: none;
   margin-top: 35px;
-  padding: 14.5px;
+  padding: 15px;
   padding-left: 20px;
   font-family: Arial Rounded MT Bold
   width: 180px;
