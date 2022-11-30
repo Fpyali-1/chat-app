@@ -96,18 +96,10 @@ body {
   border: 1px solid #3e3e3e;
 }
 
-.message {
-  margin-left: 350px;
   font-family: Arial Rounded MT Bold, Arial Rounded MT;
-  background-color: #393b3f;
+  background-color: #2a845c;
   color: white;
   border-radius: 20px;
-  margin-top: 110px;
-  margin-bottom: -60px;
-  padding: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  max-width: 400px;
 
   user-drag: none;
   user-select: none;
@@ -125,10 +117,6 @@ body {
   background-color: #2a845c;
   color: white;
   border-radius: 20px;
-  margin-top: 110px;
-  margin-bottom: -60px;
-  padding: 20px;
-  max-width: 400px;
 
   user-drag: none;
   user-select: none;
@@ -140,7 +128,6 @@ body {
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
 
- margin-left: auto;
  margin-right: 130px;
  text-align: right;
 }
@@ -199,7 +186,7 @@ body {
 #search {
   border: none;
   margin-top: 35px;
-  padding: 15px;
+  padding: 14.5px;
   padding-left: 20px;
   font-family: Arial Rounded MT Bold
   width: 180px;
@@ -232,8 +219,11 @@ body {
   margin-top: 30px;
   margin-bottom: 30px;
   background-color: #36383c;
+  cursor: pointer;
 }
-
+#development-group:hover {
+  background-color: grey;
+}
 #development-group-title {
   top: 0px;
   height: 80px;
