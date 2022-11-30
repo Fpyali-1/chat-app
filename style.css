@@ -54,6 +54,7 @@ body {
   margin-top: -25px;
   position: absolute;
   overflow: hidden;
+  width: 100%;
 
   padding: 25px;
 
@@ -98,14 +99,36 @@ body {
 .message {
   margin-left: 350px;
   font-family: Arial Rounded MT Bold, Arial Rounded MT;
+  background-color: #393b3f;
+  color: white;
+  border-radius: 20px;
+  margin-top: 110px;
+  margin-bottom: -60px;
+  padding: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 400px;
+
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+#message2 {
+  font-family: Arial Rounded MT Bold, Arial Rounded MT;
   background-color: #2a845c;
   color: white;
-  width: 350px;
   border-radius: 20px;
   margin-top: 110px;
   margin-bottom: -60px;
   padding: 20px;
-  padding-bottom: 35px;
+  max-width: 400px;
 
   user-drag: none;
   user-select: none;
@@ -117,8 +140,11 @@ body {
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
 
-  margin-right: 100000px;
+ margin-left: auto;
+ margin-right: 130px;
+ text-align: right;
 }
+
 #input1 {
   border: none;
   padding: 0 1rem;

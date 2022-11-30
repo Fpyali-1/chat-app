@@ -3,7 +3,9 @@ const ws = new WebSocket("wss://chat-app.yaliwainstain.repl.co");
 const name1 = prompt("enter your name");
 
 let x = 0;
-
+ws.addEventListener("close", () => {
+  location.reload();
+});
 ws.addEventListener("open", () => {
   x = 1;
   var objDiv = document.getElementById("messages-div");
@@ -19,13 +21,24 @@ ws.addEventListener("message", (e) => {
   });
   var x = eval(e.data);
   x.forEach((element) => {
-    var y = `
+    if (check_sharir(element)) {
+      var y = `
+    <div class="message2">
+    <p id="message2">
+    ${check(element)}
+    </p>
+    </div>
+    `;
+    }
+    else {
+      var y = `
   <div class="message">
   <p>
   ${check(element)}
   </p>
   </div>
   `;
+    }
     document.getElementById("messages-div").insertAdjacentHTML("beforeend", y);
   });
 });
@@ -50,5 +63,12 @@ function check(data) {
     return "<h1>" + data.replaceAll(";", "") + "</h1>";
   } else {
     return data;
+  }
+}
+function check_sharir(element) {
+  if (element.includes(name1)) {
+    return "message2";
+  } else {
+    return;
   }
 }
