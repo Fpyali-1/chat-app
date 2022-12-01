@@ -47,7 +47,6 @@ body {
     filter: opacity(0.1) drop-shadow(1 1 1 blue);
 }
 #messages-div {
-  background-color: #202020;
   height: 85% !important;
   margin-left: 80px;
   position: absolute;
@@ -114,8 +113,7 @@ body {
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
-
-  margin-left: 360px;
+  margin-left: 25px;
 }
 
 #message2 {
@@ -138,6 +136,23 @@ body {
   user-select: none; /* Standard syntax */
 
   margin-left: 73%;
+}
+
+#message-master {
+  width: 77.3%;
+  height: 82.9%;
+  margin-left: 427px;
+  margin-top: 82px;
+  background-color: white;
+  position: absolute;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+          line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow-y: scroll;
 }
 
 #input1 {

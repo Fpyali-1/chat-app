@@ -6,12 +6,10 @@ let x = 0;
 
 ws.addEventListener("open", () => {
   x = 1;
-  var objDiv = document.getElementById("messages-div");
+  var objDiv = document.getElementById("message-master");
   objDiv.scrollTop = objDiv.scrollHeight;
 });
 ws.addEventListener("message", (e) => {
-  var objDiv = document.getElementById("messages-div");
-  objDiv.scrollTop = objDiv.scrollHeight;
   const boxes = document.querySelectorAll("#message");
   const boxes2 = document.querySelectorAll("#message2");
 
@@ -38,7 +36,9 @@ ws.addEventListener("message", (e) => {
   </div>
   `;
     }
-    document.getElementById("messages-div").insertAdjacentHTML("beforeend", y);
+    document.getElementById("message-master").insertAdjacentHTML("beforeend", y);
+    var objDiv = document.getElementById("message-master");
+    objDiv.scrollTop = objDiv.scrollHeight;
   });
 });
 function send() {
@@ -50,7 +50,7 @@ function send() {
   document.getElementById("input1").value = "";
   y = y.replaceAll('"', "''");
   var x = `"${name1}: ${y}"`;
-  ws.send(x);
+   ws.send(x);
 }
 addEventListener("keypress", (event) => {
   if (event.key == "Enter") {
