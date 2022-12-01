@@ -10,10 +10,10 @@ ws.addEventListener("open", () => {
   objDiv.scrollTop = objDiv.scrollHeight;
 });
 ws.addEventListener("message", (e) => {
-  //var objDiv = document.getElementById("messages-div");
-  //objDiv.scrollTop = objDiv.scrollHeight;
-  const boxes = document.querySelectorAll(".message");
-  const boxes2 = document.querySelectorAll(".message2");
+  var objDiv = document.getElementById("messages-div");
+  objDiv.scrollTop = objDiv.scrollHeight;
+  const boxes = document.querySelectorAll("#message");
+  const boxes2 = document.querySelectorAll("#message2");
 
   boxes.forEach((box) => {
     box.remove();
