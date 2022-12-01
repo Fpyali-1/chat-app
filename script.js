@@ -3,9 +3,7 @@ const ws = new WebSocket("wss://chat-app.yaliwainstain.repl.co");
 const name1 = prompt("enter your name");
 
 let x = 0;
-ws.addEventListener("close", () => {
-  location.reload();
-});
+
 ws.addEventListener("open", () => {
   x = 1;
   var objDiv = document.getElementById("messages-div");
@@ -14,6 +12,7 @@ ws.addEventListener("open", () => {
 ws.addEventListener("message", (e) => {
   var objDiv = document.getElementById("messages-div");
   objDiv.scrollTop = objDiv.scrollHeight;
+  objDiv.innerHTML = "";
   const boxes = document.querySelectorAll(".message");
 
   boxes.forEach((box) => {
