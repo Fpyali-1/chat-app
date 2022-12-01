@@ -10,29 +10,29 @@ ws.addEventListener("open", () => {
   objDiv.scrollTop = objDiv.scrollHeight;
 });
 ws.addEventListener("message", (e) => {
-  var objDiv = document.getElementById("messages-div");
-  objDiv.scrollTop = objDiv.scrollHeight;
-  objDiv.innerHTML = "";
+  //var objDiv = document.getElementById("messages-div");
+  //objDiv.scrollTop = objDiv.scrollHeight;
   const boxes = document.querySelectorAll(".message");
+  const boxes2 = document.querySelectorAll(".message2");
 
   boxes.forEach((box) => {
+    box.remove();
+  });
+  boxes2.forEach((box) => {
     box.remove();
   });
   var x = eval(e.data);
   x.forEach((element) => {
     if (check_sharir(element)) {
       var y = `
-    <div class="message2">
     <p id="message2">
     ${check(element)}
     </p>
-    </div>
     `;
     }
     else {
       var y = `
-  <div class="message">
-  <p>
+  <p id="message">
   ${check(element)}
   </p>
   </div>

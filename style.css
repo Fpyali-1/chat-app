@@ -96,12 +96,13 @@ body {
   border: 1px solid #3e3e3e;
 }
 
-#message1 {
+#message {
   font-family: Arial Rounded MT Bold, Arial Rounded MT;
-  background-color: #2a845c;
+  background-color: #343638;
   color: white;
   border-radius: 20px;
-  max-width: 400px;
+  max-width: 300px;
+  padding: 20px;
 
   user-drag: none;
   user-select: none;
@@ -112,6 +113,8 @@ body {
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
+
+  margin-left: 360px;
 }
 
 #message2 {
