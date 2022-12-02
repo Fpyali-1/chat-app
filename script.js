@@ -19,7 +19,8 @@ ws.addEventListener("message", (e) => {
   boxes2.forEach((box) => {
     box.remove();
   });
-  var x = eval(e.data);
+  x = JSON.parse(e.data);
+  console.log(x);
   x.forEach((element) => {
     if (check_sharir(element)) {
       var y = `
@@ -27,8 +28,7 @@ ws.addEventListener("message", (e) => {
     ${check(element)}
     </p>
     `;
-    }
-    else {
+    } else {
       var y = `
   <p id="message">
   ${check(element)}
@@ -36,7 +36,9 @@ ws.addEventListener("message", (e) => {
   </div>
   `;
     }
-    document.getElementById("message-master").insertAdjacentHTML("beforeend", y);
+    document
+      .getElementById("message-master")
+      .insertAdjacentHTML("beforeend", y);
     var objDiv = document.getElementById("message-master");
     objDiv.scrollTop = objDiv.scrollHeight;
   });
@@ -48,9 +50,8 @@ function send() {
   }
 
   document.getElementById("input1").value = "";
-  y = y.replaceAll('"', "''");
-  var x = `"${name1}: ${y}"`;
-   ws.send(x);
+  var x = `${name1}: ${y}`;
+  ws.send(x);
 }
 addEventListener("keypress", (event) => {
   if (event.key == "Enter") {
