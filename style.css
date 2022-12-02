@@ -87,6 +87,16 @@ body {
 
   top: 43px;
   left: 250px;
+  transition: ease .2s;
+}
+#newbutton:hover {
+	transform: scale(0.9);
+  transition: ease .2s;
+}
+#newbutton:active {
+	transform: scale(1.1);
+  transition: ease .2s;
+
 }
 
 #form {
@@ -200,11 +210,11 @@ body {
   transition: ease .2s;
 }
 #button:hover {
-	transform: scale(0.95);
+	transform: scale(0.9);
   transition: ease .2s;
 }
 #button:active {
-	transform: scale(1.05);
+	transform: scale(1.1);
   transition: ease .2s;
 
 }
