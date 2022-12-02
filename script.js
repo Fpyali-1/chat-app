@@ -13,25 +13,6 @@ ws.addEventListener("open", () => {
 });
 ws.addEventListener("message", (e) => {
   console.log(e.data);
-  if (e.data.includes("[")) {
-    var x;
-    x = JSON.parse(e.data);
-   const boxes = document.querySelectorAll("#development-group");
-
-    boxes.forEach((box) => {
-      box.remove();
-    });
-    x.forEach((element) => {
-    var y = `<div id="development-group">
-
-              <img src="assets/pfp/developers.jpg" id="development-group-pfp">
-              <div id="development-group-name">${element}</div>
-
-            </div>`
-    document.getElementById("chats").insertAdjacentHTML(y);
-    
-    })
-  }
   if (e.data.includes("data:")) {
     const boxes = document.querySelectorAll("#message");
     const boxes2 = document.querySelectorAll("#message2");
