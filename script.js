@@ -16,7 +16,7 @@ ws.addEventListener("message", (e) => {
   if (e.data.includes("[")) {
     var x;
     x = JSON.parse(e.data);
-   const boxes = document.querySelectorAll("#development_group");
+   const boxes = document.querySelectorAll("#development-group");
 
     boxes.forEach((box) => {
       box.remove();
