@@ -4,7 +4,7 @@ const name1 = prompt("enter password");
 const name2 = prompt("enter your name");
 function createserver() {
   let x = prompt("enter a name for your server");
-  ws.send(`createserver${x}`)
+  ws.send(`createserver${x}`);
 }
 ws.addEventListener("open", () => {
   x = 1;
