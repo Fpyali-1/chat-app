@@ -58,7 +58,7 @@ function send() {
   }
 
   document.getElementById("input1").value = "";
-  var y = `private message{"password": "${name2}", "message": "${y}"}`;
+  var y = `private message{"password": "${name1}", "message": "${name2}: ${y}"}`;
   ws.send(y);
 }
 addEventListener("keypress", (event) => {
