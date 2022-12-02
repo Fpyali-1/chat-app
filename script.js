@@ -16,7 +16,11 @@ ws.addEventListener("message", (e) => {
   if (e.data.includes("[")) {
     var x;
     x = JSON.parse(e.data);
-    document.getElementById("chats").innerHTML = ""
+   const boxes = document.querySelectorAll("#development_group");
+
+    boxes.forEach((box) => {
+      box.remove();
+    });
     x.forEach((element) => {
     var y = `<div id="development-group">
 
