@@ -13,7 +13,7 @@ ws.addEventListener("open", () => {
 });
 ws.addEventListener("message", (e) => {
   console.log(e.data);
-  if (e.data.includes("data:")) {
+  if (e.data[0] == "[") {
     const boxes = document.querySelectorAll("#message");
     const boxes2 = document.querySelectorAll("#message2");
 
