@@ -61,7 +61,7 @@ function send() {
   }
 
   document.getElementById("input1").value = "";
-  var y = `private message{"password": ${JSON.stringify(name1)}, "message": "${JSON.stringify(y)}"}`;
+  var y = `private message{"password": ${JSON.stringify(name1)}, "message": ${JSON.stringify(y)}}`;
   console.log(y);
   ws.send(y);
 }
