@@ -82,6 +82,13 @@ body {
   margin: 33px;
 }
 
+#newbutton {
+  position: absolute;
+
+  top: 43px;
+  left: 250px;
+}
+
 #form {
   background: #2c2e2e;
   padding: 13px;
