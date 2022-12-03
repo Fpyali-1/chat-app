@@ -50,7 +50,8 @@ ws.addEventListener("message", (e) => {
       objDiv.scrollTop = objDiv.scrollHeight;
     });
   }
-  if (e.data.includes("checkpassword" && e.data[0] == "c")) {
+  if (e.data.includes("checkpassword")) {
+    if (e.data[0] !== "c") return;
     ws.send(`getdata${name1}`);
     console.log("new message");
     return;
