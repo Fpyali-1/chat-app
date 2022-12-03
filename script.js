@@ -2,10 +2,12 @@ const ws = new WebSocket("wss://chat-app.yaliwainstain.repl.co");
 
 const name1 = prompt("enter password");
 const name2 = prompt("enter your name");
+
 function createserver() {
   let x = prompt("enter a name for your server");
   ws.send(`createserver${x}`);
 }
+
 ws.addEventListener("open", () => {
   x = 1;
   var objDiv = document.getElementById("message-master");
@@ -61,8 +63,10 @@ function send() {
   }
 
   document.getElementById("input1").value = "";
-  var y = `private message{"password": "${name1}", "message": "${name2}: ${y}"}`;
-  console.log(y);
+  var p = name2 + ":" + " " + y;
+  var y = `private message{"password": ${JSON.stringify(
+    name1
+  )}, "message": ${JSON.stringify(p)}}`;
   ws.send(y);
 }
 addEventListener("keypress", (event) => {
