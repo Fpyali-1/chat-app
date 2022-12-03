@@ -30,22 +30,16 @@ ws.addEventListener("message", (e) => {
     let x = JSON.parse(y);
     x.forEach((element) => {
       if (check_sharir(element)) {
-        var y = `
-    <p id="message2">
-    ${check(element)}
-    </p>
-    `;
+        var y = document.createElement("p");
+        y.innerText = element;
+        y.id = "message2";
       } else {
-        var y = `
-  <p id="message">
-  ${check(element)}
-  </p>
-  </div>
-  `;
+        var y = document.createElement("p");
+        y.innerText = element;
+        y.id = "message";
       }
-      document
-        .getElementById("message-master")
-        .insertAdjacentHTML("beforeend", y);
+      var t = document.getElementById("message-master");
+      t.append(y);
       var objDiv = document.getElementById("message-master");
       objDiv.scrollTop = objDiv.scrollHeight;
     });
@@ -75,13 +69,6 @@ addEventListener("keypress", (event) => {
     send();
   }
 });
-function check(data) {
-  if (data.split(";").length - 1 > 1) {
-    return "<h1>" + data.replaceAll(";", "") + "</h1>";
-  } else {
-    return data;
-  }
-}
 function check_sharir(element) {
   if (element.includes(name2)) {
     return "message2";
