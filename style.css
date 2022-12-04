@@ -48,11 +48,6 @@ body {
 	transform: scale(0.9);
   transition: ease .2s;
 }
-#sidebarimage:active {
-	transform: scale(1.1);
-  transition: ease .2s;
-
-}
 #sidebarimage:hover {
     filter: opacity(0.1) drop-shadow(1 1 1 blue);
 }
@@ -103,12 +98,6 @@ body {
 	transform: scale(0.9);
   transition: ease .2s;
 }
-#newbutton:active {
-	transform: scale(1.1);
-  transition: ease .2s;
-
-}
-
 #form {
   background: #2c2e2e;
   padding: 13px;
@@ -222,11 +211,6 @@ body {
 #button:hover {
 	transform: scale(0.9);
   transition: ease .2s;
-}
-#button:active {
-	transform: scale(1.1);
-  transition: ease .2s;
-
 }
 #newbutton {
   width: 20px;
