@@ -6,7 +6,6 @@ Fpyali created a small chat app that doesn't have may fetaures in November 2022,
 - Go to https://itaysharir.github.io/chatapp
 
 # Modify the code to your liking
-To try the our chatapp out, do the following:
 ## Download the files - You can do this in two ways:
 ### Download them from the gui:
 - Make sure you are on this github repo
