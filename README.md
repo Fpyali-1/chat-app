@@ -17,7 +17,7 @@ To try the our chatapp out, do the following:
 - Make sure you have git installed
 - in the terminal/cmd run the following: ```git clone https://github.com/itaysharir/chatapp.git```
 
-## Actually open the website
+## Actually modify the code
 - Open the downloaded folder
 - Open the file you want to view/modify in your favorite editor
 
